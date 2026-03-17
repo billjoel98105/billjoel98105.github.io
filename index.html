@@ -1,38 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emerald City Window Cleaning</title>
+
 <style>
-body {
-font-family: Arial;
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f7fa;
+color:#333;
+}
+
+header{
+background:#0f172a;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#1e293b;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+background:linear-gradient(135deg,#0284c7,#22c55e);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:white;
+color:#0284c7;
+font-weight:bold;
+border-radius:6px;
+text-decoration:none;
+}
+
+.section{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+footer{
 background:#0f172a;
 color:white;
 text-align:center;
-padding:50px;
+padding:20px;
 }
 
-h1 {
-font-size:48px;
-}
-
-button{
-padding:15px 30px;
-background:#22c55e;
-border:none;
-font-size:18px;
-color:white;
-border-radius:6px;
-}
 </style>
 </head>
 
 <body>
 
-<h1>Welcome</h1>
+<header>
+<h2>Emerald City Window Cleaning</h2>
+<p>Crystal Clear Views Across Seattle</p>
+</header>
 
-<p>This website is hosted for free using GitHub Pages.</p>
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<button>Contact Me</button>
+<section class="hero">
+
+<h1>Professional Window Cleaning</h1>
+
+<p>Residential • Commercial • High Rise</p>
+
+<a class="button" href="#contact">Request a Quote</a>
+
+</section>
+
+<section class="section" id="services">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Residential Windows</h3>
+<p>Interior and exterior cleaning for homes of all sizes.</p>
+</div>
+
+<div class="card">
+<h3>Commercial Cleaning</h3>
+<p>Storefronts, offices, and commercial buildings.</p>
+</div>
+
+<div class="card">
+<h3>High Access Windows</h3>
+<p>Hard to reach windows cleaned safely and professionally.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="about">
+
+<h2>About Us</h2>
+
+<p>
+We provide professional window cleaning services with a focus on quality,
+safety, and customer satisfaction. Our goal is to leave every window
+spotless and every customer happy.
+</p>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: contact@yourbusiness.com</p>
+
+<p>Phone: (555) 555-5555</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Emerald City Window Cleaning</p>
+
+</footer>
 
 </body>
 </html>
